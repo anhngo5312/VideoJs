@@ -26,7 +26,7 @@
 		}
 	?>
 	<video id="my_video_1" class="video-js vjs-default-skin" width="640px" height="267px"
-	controls autoplay preload="none" data-setup='{ "aspectRatio":"640:267", "playbackRates": [1, 1.5, 2] }'>
+	controls <?php if ($link != "#") echo "autoplay"; ?> preload="none" data-setup='{ "aspectRatio":"640:267", "playbackRates": [1, 1.35, 1.5, 1.75, 2] }'>
 	<source src="<?php echo $link; ?>" type="video/mp4"/>
 </video>
 </body>
