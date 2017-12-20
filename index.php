@@ -23,6 +23,8 @@
 		$link = "#";
 		if (isset($_POST["link"])) {
 			$link = $_POST["link"];
+		} else if (isset($_GET["link"])) {
+			$link = $_GET["link"];
 		}
 	?>
 	<video id="my_video_1" class="video-js vjs-default-skin" width="640px" height="267px"
